@@ -1,0 +1,26 @@
+---
+title: Multi-language Support
+---
+# Multi-language Support
+
+Given that software development is still one of the highest costs of any technology project, our aim is to help reduce (or even remove) that cost by building software that is not just focused on a single language, but that can be reused for multiple languages.
+
+## How this works
+
+Right now you can use [kiyânaw Transcribe](https://bundle.kiyanaw.net) for any language. However, to unlock additional features (such as the [Language Database](/language-database) or [Spell-checking](/transcribe-features/spell-check)) an FST (or similar technology) must be available for your language.
+
+### What is an FST?
+
+FST stands for "finite state transducer". In short it's a specialized piece of software that can analyze a word in your target language to determine features about that word, for example, the `crk` (Plains Cree, Y-dialect) [FST](https://github.com/giellalt/lang-crk) may take a word like so:
+
+```
+ê-kiskêyihtâhk
+```
+
+and may produce the following analysis:
+
+```
+PV/e+kiskêyihtam+V+TI+Cnj+3Sg
+```
+
+With a "successful" analysis we can confidently say that "spell checking was successful" but we also unlock additional useful features such as being able to index data around a word in the [Language Database](/language-database). 
