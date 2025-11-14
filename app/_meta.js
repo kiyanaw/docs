@@ -3,6 +3,10 @@ export default {
   changelog: 'Changelog',
   //roadmap: 'Roadmap',
   philosophy: 'Our Philosophy',
+  support: {
+    title: 'Support',
+    href: 'https://bundle.kiyanaw.net/support'
+  },
   '###1': {
     type: 'separator',
     title: 'kiyânaw Transcribe'

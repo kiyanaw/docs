@@ -3,3 +3,13 @@
 .nextra-border button {
   display: none !important;
 }
+
+/* Transcribe link hover effect */
+.transcribe-link:hover {
+  color: var(--nx-colors-gray-900) !important;
+}
+
+/* Dark mode support for transcribe link */
+.dark .transcribe-link:hover {
+  color: var(--nx-colors-gray-100) !important;
+}

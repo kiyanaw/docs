@@ -24,7 +24,21 @@ const navbar = (
         <span style={{ fontWeight: 'bold' }}>kiyânaw</span>
       </div>
     }
-  />
+    projectLink='https://github.com/kiyanaw/'
+  >
+    <a
+      href="https://bundle.kiyanaw.net"
+      target="_blank"
+      rel="noopener noreferrer"
+      style={{
+        marginRight: '16px',
+        fontSize: '14px',
+        textDecoration: 'none'
+      }}
+    >
+      Transcribe
+    </a>
+  </Navbar>
 )
 
 const footer = <Footer>MIT {new Date().getFullYear()} © kiyânaw.</Footer>
@@ -41,7 +55,7 @@ export default async function RootLayout({ children }) {
         <Layout
           navbar={navbar}
           pageMap={await getPageMap()}
-          docsRepositoryBase="https://github.com/kiyanaw/docs"
+          docsRepositoryBase="https://github.com/kiyanaw/docs/blob/main"
           footer={footer}
         >
           {children}
