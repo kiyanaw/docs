@@ -5,10 +5,10 @@
   "start": "next start"
 },
   "dependencies": {
-    "next": "^15.5.2",
+    "next": "^15.5.7",
     "nextra": "^4.4.0",
     "nextra-theme-docs": "^4.4.0",
-    "react": "^19.1.1",
-    "react-dom": "^19.1.1"
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
   }
 }
