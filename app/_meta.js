@@ -1,6 +1,5 @@
 export default {
   index: 'Home',
-  changelog: 'Changelog',
   //roadmap: 'Roadmap',
   philosophy: 'Our Philosophy',
   support: {
@@ -14,6 +13,7 @@ export default {
   'transcribe-overview': 'Transcribe Overview',
   'transcribe-features': 'Core Features',
   'fst-support': 'FST Support',
+  'transcribe-changelog': 'Changelog',
   '###2': {
     type: 'separator',
     title: 'Language Database'
