@@ -57,6 +57,7 @@ export default async function RootLayout({ children }) {
           pageMap={await getPageMap()}
           docsRepositoryBase="https://github.com/kiyanaw/docs/blob/main"
           footer={footer}
+          sidebar={{ defaultMenuCollapseLevel: 1 }}
         >
           {children}
         </Layout>

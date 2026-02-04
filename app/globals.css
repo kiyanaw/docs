@@ -13,3 +13,21 @@
 .dark .transcribe-link:hover {
   color: var(--nx-colors-gray-100) !important;
 }
+
+/* Card link cursor */
+.card-link,
+.card-link * {
+  cursor: pointer !important;
+}
+
+/* Card description text */
+.card-description {
+  flex: 1;
+}
+
+.card-description p {
+  margin: 0 !important;
+  color: #6b7280 !important;
+  font-size: 13px !important;
+  line-height: 1.5 !important;
+}

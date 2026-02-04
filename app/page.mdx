@@ -1,15 +1,49 @@
-# Welcome to kiyânaw Documentation
+import { Badge } from './components/Badge'
+import { Card, CardGrid } from './components/Card'
 
-Find documentation and resources here to help you get started transcribing your Indigenous language.
+# What is kiyânaw?
 
-### Our Philosophy
+The kiyânaw platform is a series of online tools **designed for Indigenous Language Revitalization** by Indigenous 
+language learners. 
 
-Find out more about how we approach software for Indigenous Languages [here](/philosophy)
+## Our Key Principles
 
-## Getting Started Transcribing
+ * Build **one** platform capable of representing *any Indigenous Language*,
+ * Focus on [intermediate learning with a goal of speech & fluency](/transcribe-overview/why-transcribe),
+ * Put [security and privacy first](/security-privacy),
+ * Make it free, *forever*.
 
-Click here for the [Transcribe quick-start guide](/transcribe-overview/getting-started).
+## Our Apps
 
-## Contact Us
+<CardGrid>
+  <Card
+    image="/preview-mobile.png"
+    subtitle="iOS / Android"
+    title="kiyânaw App"
+    badge={<Badge>Coming soon</Badge>}
+  >
+    Community-powered Question & Answer app that allows communities to continually grow their Language Bundle. 
+    Any leaner can ask questions. Any mentor can contribute audio phrases for their own dialect and community.
+  </Card>
+  <Card
+    image="/preview-transcribe.png"
+    subtitle="Desktop / PWA"
+    title="kiyânaw Transcribe"
+    href="/transcribe-overview"
+  >
+    Online collaborative transcription software designed for Indigenous Languages. Work on Elder recordings
+    with others. Flag problem areas to get help. Export as text or subtitles.
+  </Card>
+  <Card
+    image="/preview-database.png"
+    subtitle="Desktop / PWA"
+    title="kiyânaw Language Database"
+  >
+    Searchable database for targeted study of specific words or phrasing. 
+  </Card>
+</CardGrid>
 
-Reach out [to connect or for support](mailto:support@kiyanaw.net)
+## Some great next steps
+ * [Our Philosophy](/philosophy)
+ * [Transcribe Quick-start](/transcribe-overview/getting-started)
+ * [Contact Us](https://bundle.kiyanaw.net/support)

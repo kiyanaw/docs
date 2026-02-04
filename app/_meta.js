@@ -11,13 +11,14 @@ export default {
     type: 'separator',
     title: 'kiyânaw Transcribe'
   },
-  'transcribe-overview': 'Overview',
+  'transcribe-overview': 'Transcribe Overview',
   'transcribe-features': 'Core Features',
+  'fst-support': 'FST Support',
   '###2': {
     type: 'separator',
     title: 'Language Database'
   },
-  'language-database': 'Coming soon...',
+  'language-database': 'Database Overview',
   docs: {
     display: 'hidden'
   }

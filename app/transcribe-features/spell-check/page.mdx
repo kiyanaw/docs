@@ -6,7 +6,32 @@ title: Spell-checking for Indigenous Languages
 
 Though generally under-represented, there are [some spell-checkers available for Indigenous Languages](https://github.com/giellalt). This generally comes from the [intensive](https://altlab.ualberta.ca/wp-content/uploads/2019/01/Snoek_et_al_CEL1_2014.pdf) and [painstaking work](https://altlab.ualberta.ca/wp-content/uploads/2022/12/Schmirler-GP1-Plains_Cree_CG-2017.pdf) of modelling the grammar or morphology of a language.
 
-When available, the resulting application (known as an FST or [finite-state transducer](https://en.wikipedia.org/wiki/Finite-state_transducer)) can be used to determine if a given word or occurence is "correct". While FSTs are capable of much more than this, for now we simply use them (when available) for the task of spell-checking, and soon to also [index known, good words from a transcription in our database](/language-database) for discovery by future learners.
+When available, the resulting utility (known as an FST or [finite-state transducer](/fst-support)) can be used to determine if a given word or occurence is "correct". While FSTs are capable of much more than this, for now we simply use them (when available) for the task of spell-checking, and also [index known, good words from a transcription in our database](/language-database) for discovery by future learners.
+
+## Disambiguating Analyses 
+Quite often a written form of a word may have multiple analyses available. When this is the case any words with multiple analyses will show a light-blue line beneath indicating that the analysis is ambiguous. 
+
+![Multiple Analyses Available](/transcribe-multiple-analysis-line.png)
+
+Clicking within the word will reveal available analyses in the [region context bar](/transcribe-features/interface-controls) where you can select the desired analysis for that word.
+
+![Select Desired Analysis](/transcribe-select-analysis.png)
+
+If you are unsure about the analysis feel free to leave it for later.
+
+## Spelling Suggestions
+When available (depending on the [FST](/fst-support)) we also provide spelling suggestions by showing a light-orange line beneath a word that has suggestions available. Clicking within the word will reveal the suggestions in the region context bar.
+
+![Spelling Suggestions](/transcribe-spelling-suggestions.png)
+
+## Currently-supported Languages
+
+We currently support the following FST integrations for kiyânaw Transcribe:
+
+ * [nêhiyawêwin (Plains Cree Y-dialect `crk`)](/fst-support/crk)
+ * [Northern Michif (experimental `crgn`)](/fst-support/crgn)
+ * [Anishnaabemowin (Border Lakes Ojibwe `ciw`)](/fst-support/ciw)
+ * [Nishnaabemowin (Odawa `otw`)]((/fst-support/otw))
 
 ## Getting your FST or Spell-checker into Transcribe
 

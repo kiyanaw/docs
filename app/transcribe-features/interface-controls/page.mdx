@@ -2,16 +2,38 @@
 title: Interface Controls
 ---
 
+import { Callout } from '../../components/Badge'
+
 # Basic Controls
 
 Here are the basic UI controls for kiyânaw Transcribe.
 
 ![Basic Controls](/basic-controls.png)
 
- 1. **Transcription Settings**: Click on the transcription title to bring up your [Transcription Settings](/transcribe-features/settings)
- 2. **Play Transcription**: Clicking this will play the transcription continuously from the current position. Click again to pause playback.
- 3. **Zoom Waveform**: Adjust this slider to change the waveform zoom. Click the icon to reset.
- 4. **Playback Speed**: Adjust this slider to change the playback speed of the audio. Click the icon to reset.
- 5. **Region Controls** From left-to-right **Play Region** will play only the selected [region](/transcribe-features/regions), **Issue Button** will create an [Issue](/transcribe-features/issues) when text is selected within the editor , **Deselect Region** cancels the currently-selected region to show all Issues in the issue list, **Delete Region** will permanently delete the selected region.
- 6. **Profile Icon**: Gives access to Support and Sign-out options.
- 7. **Video Button**: Will restore video thumbnail when minimized.
+<Callout>1</Callout> **Transcription Settings**: Click on the transcription title to bring up your [Transcription Settings](/transcribe-features/settings).
+
+<Callout>2</Callout> **Play Transcription**: Clicking this will play the transcription continuously from the current position. Click again to pause playback.
+
+<Callout>3</Callout> **Zoom Waveform**: Adjust this slider to change the waveform zoom. Click the icon to reset.
+
+<Callout>4</Callout> **Playback Speed**: Adjust this slider to change the playback speed of the audio. Click the icon to reset.
+
+<Callout>5</Callout> **Region Editor**: When a region is selected, add text or translation (depending on which mode is selected) here.
+
+<Callout>6</Callout> **Region List**: All created regions will appear in this list showing both the language text and translation (when provided). Clicking on will start & stop playback for that region.
+
+<Callout>7</Callout> **Region Controls**, from left-to-right:
+ * **Play Region** will play only the selected [region](/transcribe-features/regions), 
+ * **Issue Button** will create an [Issue](/transcribe-features/issues) when text is selected within the editor,
+ * **Database Button** when the cursor is within a word that has been analyzed, this will link to the [Lemma page](/language-database/browse#viewing-the-lemma-page) for that word in the [Language Database](/language-database),
+ * **Editor Toggle** will toggle between the main (Indigenous) language editor and the translation editor,
+ * **Deselect Region** cancels the currently-selected region to show all Issues in the issue list,
+ * **Delete Region** will permanently delete the selected region.
+ 
+<Callout>8</Callout> **Region Context Bar** will display contextual information about the current word including [analyses](/transcribe-features/spell-check#disambiguating-analyses) or [spelling suggestions](/transcribe-features/spell-check#spelling-suggestions).
+
+<Callout>9</Callout> **Previous/Next Region Buttons** will navigate between regions, useful for going to the "last" region without scrolling.
+ 
+<Callout>10</Callout> **Video Button** will restore video thumbnail when minimized.
+
+<Callout>11</Callout> **Media Access Expiry** shows how much time is remaining for the [current temporary media credentials](/philosophy/security-privacy#media-access-credentials).

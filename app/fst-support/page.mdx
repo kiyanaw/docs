@@ -1,0 +1,74 @@
+---
+title: Finite State Transducer Support
+asIndexPage: true
+---
+
+# What is a Finite State Transducer?
+In short, a [finite state transducer](https://www.google.com/search?q=what+is+a+finite+state+transducer) (FST) can be used for analysis of text, but for the purposes of Indigenous Languages especially within our platform, we generally use them for  "spell-checking" and to identify the "lemma" (dictionary form) of a word and its analysis.
+
+#### Analysis example
+
+Here we take the nêhiyaw (Plains Cree Y-dialect) word `ê-ohci-kiskêyihtahk` which could mean roughly "they (singular) know it", and using the [FST from the University of Alberta language team](https://github.com/giellalt/lang-crk) we might produce the following:
+
+```
+PV/e+PV/ohci+kiskêyihtam+V+TI+Cnj+3Sg
+```
+
+Besides the [lemma](https://en.wikipedia.org/wiki/Lemma_(morphology)) this string (or 'analysis') gives us a bunch of [tags](/fst-support/tags) as well:
+
+ * The "lemma" is `kiskêyihtam` ["s/he knows s.t., s/he knows s.t. of his/her own experience"](https://itwewina.altlab.app/word/kisk%C3%AA%C3%BDihtam/),
+ * Includes two "preverbs", [`PV/e+`](https://itwewina.altlab.app/word/%C3%AA-/) and [`PV/ohci+`](https://itwewina.altlab.app/word/ohci-@1/),
+ * [Word type is "verb" `+V`](https://www.youtube.com/watch?v=kRBfd9OtmTg),
+ * [Word class is "transitive inanimate" `+TI`](https://www.youtube.com/watch?v=kRBfd9OtmTg),
+ * [Word form is in the "conjunct mode" `+Cnj`](https://plainscree.algonquianlanguages.ca/grammar/words/verbs/illocution-and-mode/),
+ * And finally, the subject is the third person, singular `+3Sg`.
+
+
+## Why does this matter?
+Indigenous languages can be complex, especially when it comes to understanding the grammar. In english, to understand the different ways you can use a word (for example "run") depending on the subject we can evaluate the grammar like so:
+
+```
+1s: I run
+2s: You run
+3s: That one runs
+3p: They run
+1p: We run
+21p: We run
+2p: Y'all run
+...
+```
+
+So in this example, we've only really run (pun intended) into two different variations or "conjugations" of the verb: `run`, and `runs`. If we kept going we would eventually get to `run`, `runs`, `running`, `ran` which may be the full extent of the conjugations for that verb in english. 
+
+For may Indigenous languages, however, there can be _many_ different variations of a verb depending on who is being spoken about. Here is an example using the same verb `run` in nêhiyawêwin (Plains Cree Y-dialect):
+
+```
+1s: nipimipahtân
+2s: kipimipahtân
+3s: pimipahtâw
+3p: pimipahtâwak
+1p: nipimipahtânân
+21p: kipimipahtânaw
+2p: kipimipahtânâwâw
+...
+```
+
+In this case we can see that there are different variations (conjugations) of the verb for _every single form_ or change of subject. This gets even more complex when getting into [transitive forms](https://www.youtube.com/watch?v=QwxjCDQKOCA) which really means involving a person and a thing ("**you** see **it**") or two people ("**you** see **her**"). 
+
+Learning the grammar of an Indigenous language can be greatly beneficial, but also takes a lot of study. Having the ability to **identify and study specific conjugations can help fast-track this process**, especially if you can search for them. 
+
+This brings us to...
+
+## Language Database support 
+An added bonus we get when we have FST support for an Indigenous Language is that once we can identify the *lemma* of a word  using the FST, we can group entries by the lemma within our [Language Database](/language-database). From here learners can search and browse to see and hear variations of any given word (or phrase) that's been encountered in a transcription.
+
+Here are some example conjugations of the nêhiyawêwin word `itwêw` "that one says":
+
+#### Encountered variations of `itwêw`
+
+![Variations of itwêw](/database-itwew.png)
+
+#### Attestations of variation `nika-itwân`
+![Variations of itwêw](/database-nika-itwan.png)
+
+Find out more about [Language Database here](/language-database)

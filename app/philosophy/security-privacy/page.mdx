@@ -8,6 +8,14 @@ Our platform was re-written from the ground up to implement the highest possible
 This includes:
 
  * All data is encrypted in-transit & at-rest using industry-standard [AES-256](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard) level encryption.
- * All transcriptions are secure & private by default and any sharing functionality is opt-in.
- * All data access requires authentication & explicit view- or edit- permissions.
+ * All transcriptions are secure & private by default and any [sharing functionality](/transcribe-features/sharing) is **strictly opt-in**.
+ * All data access requires user authentication as well as **explicitly-provided view or edit permissions**.
  * All media access requires pre-signed, time-limited URLs by a permissions-enabled, authenticated user.
+
+ ## Media Access Credentials
+
+ In order to maintain strict security standards, all stored media is encrypted at-rest & in-transit and requires signed, temporary credentials for access. This is handled for you automatically when you log into [kiyânaw Transcribe](/transcribe-overview), however credentials are only valid for 1-hour intervals after which you will be prompted to request new credentials to continue working on your transcription.
+
+ ![Expired Media Credential Warning](/media-credentials-expired.png)
+
+ Click the Refresh button in order to provision new credentials and continue working.

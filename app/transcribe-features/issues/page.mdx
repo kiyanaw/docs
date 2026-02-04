@@ -2,13 +2,15 @@
 title: Issues
 ---
 
+import { Badge } from '../../components/Badge'
+
 # Issues
 
 Issues allow you to flag a section of text within a region that may be problematic for several reasons. We currently **support three issue types**:
 
- * **Needs Help**: Inaudible or challenging passage that needs additional help from a fluent speaker or advanced learner.
- * **Indexing**: Issue type to indicate that a word exists in a given dictionary but is not "spell checking" correctly. A compiled list of this type can later be sent to the team that manages the [transducer or spell-checker](/transcribe-features/spell-check).
- * **New Word**: When a user is reasonably confident that a word is spelled correctly but it is neither spell-checking or found in a given dictionary, this issue type may be used to indicate that a word may need to be added to the dictionary for the given language.
+ * <Badge variant="needsHelp">Needs Help</Badge> Inaudible or challenging passage that needs additional help from a fluent speaker or advanced learner.
+ * <Badge variant="indexing">Indexing</Badge> Issue type to indicate that a word exists in a given dictionary but is not "spell checking" correctly. A compiled list of this type can later be sent to the team that manages the [transducer or spell-checker](/transcribe-features/spell-check).
+ * <Badge variant="newWord">New Word</Badge> When a user is reasonably confident that a word is spelled correctly but it is neither spell-checking or found in a given dictionary, this issue type may be used to indicate that a word may need to be added to the dictionary for the given language.
 
 ## Adding an Issue 
 
