@@ -2,6 +2,7 @@ export default {
   index: 'Home',
   //roadmap: 'Roadmap',
   philosophy: 'Our Philosophy',
+  privacy: 'Privacy Policy',
   support: {
     title: 'Support',
     href: 'https://bundle.kiyanaw.net/support'
