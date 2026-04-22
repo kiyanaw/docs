@@ -7,6 +7,12 @@ export default {
     title: 'Support',
     href: 'https://bundle.kiyanaw.net/support'
   },
+  '###0': {
+    type: 'separator',
+    title: 'kiyânaw Mentor'
+  },
+  'mentor-overview': 'Mentor Overview',
+  'mentor-add-language': 'Contribute',
   '###1': {
     type: 'separator',
     title: 'kiyânaw Transcribe'
