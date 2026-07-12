@@ -3,6 +3,7 @@ export default {
   //roadmap: 'Roadmap',
   philosophy: 'Our Philosophy',
   privacy: 'Privacy Policy',
+  terms: 'Terms of Service',
   support: {
     title: 'Support',
     href: 'https://bundle.kiyanaw.net/support'
