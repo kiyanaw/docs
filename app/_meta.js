@@ -4,6 +4,7 @@ export default {
   philosophy: 'Our Philosophy',
   privacy: 'Privacy Policy',
   terms: 'Terms of Service',
+  'delete-my-data': 'Delete My Data',
   support: {
     title: 'Support',
     href: 'https://bundle.kiyanaw.net/support'
